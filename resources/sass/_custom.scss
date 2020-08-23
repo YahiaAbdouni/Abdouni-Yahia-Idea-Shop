@@ -1,0 +1,124 @@
+main{
+    overflow: hidden;
+}
+
+.navbar{
+    background: #f1f1f1;
+    border-bottom: 2px solid #2196F3;
+}
+
+.navbar-brand{
+    color: #2196F3;
+    border-bottom: 2px solid transparent;
+    font-size: x-large;
+    letter-spacing: 3px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: 1s;
+}
+
+.navbar-brand:hover{
+    border-bottom: 2px solid #2196F3;
+}
+
+.nav-link{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: grey;
+    border-bottom: 2px solid transparent;
+    transition: 1s;
+}
+
+.active{
+    color: #2196F3;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid #2196F3;
+}
+
+.cover{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("cover.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    width: 80%;
+}
+
+.cover-content{
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cover-content h1{
+    color: #f1f1f1;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+.joinlink{
+    color: #2196F3;
+    font-size: x-large;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    transition: 1s;
+}
+
+.joinlink:hover{
+    color: #2196F3;
+    border-bottom: 2px solid #2196F3;
+}
+
+.pic1{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url("pic1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.pic2{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url("pic2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.pic3{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url("pic3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.pic1, .pic2, .pic3{
+    height: 200px;
+}
+
+.articleh{
+    color: #0a4e86;
+}
+
+.homebtn{
+    border: 2px solid #2196F3;
+    color: #2196F3;
+    transition: .3s;
+}
+
+.homebtn:hover{
+    color: #0a4e86;
+    border-bottom: 2px solid #0a4e86;
+}
+
+// UserSide post index
+
+.postheader{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: #2196F3;
+}
+
+.post-content{
+    width: 100%;
+}
