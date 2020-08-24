@@ -11,6 +11,11 @@
     <!-- Styles -->
     <link href="{{asset('assets/css/page.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">

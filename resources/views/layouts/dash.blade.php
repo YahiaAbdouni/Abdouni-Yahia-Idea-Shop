@@ -99,14 +99,14 @@
             <div class="col-md-8 mx-auto">
   
               <h1>Dashboard</h1>
-              <div class="container-xs bg-light p-0">
+              {{-- <div class="container-xs bg-light p-0">
                 <form class="input-group" target="#" method="GET">
                   <input type="text" class="form-control" name="s" placeholder="Search">
                   <div class="input-group-addon">
                     <a href="#"><span class="input-group-text"><i class="ti-search"></i></span></a>
                   </div>
                 </form>
-              </div>
+              </div> --}}
   
             </div>
           </div>
