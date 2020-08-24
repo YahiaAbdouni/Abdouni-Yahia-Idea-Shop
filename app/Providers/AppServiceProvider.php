@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Providers\App;
+use Illuminate\Contracts\Routing\UrlGenerator; 
 
 class AppServiceProvider extends ServiceProvider
 {
