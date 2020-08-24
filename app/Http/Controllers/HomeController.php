@@ -34,7 +34,8 @@ class HomeController extends Controller
 
     public function welcome()
     {
-        return view('welcome')->with('posts', Post::orderBy('id', 'DESC')->get())->with('categories', Category::all());
+        // ->with('posts', Post::orderBy('id', 'DESC')->get())->with('categories', Category::all())
+        return view('welcome');
     }
 
     public function post(Post $post)
