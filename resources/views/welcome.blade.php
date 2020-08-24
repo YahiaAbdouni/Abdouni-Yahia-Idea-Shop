@@ -29,7 +29,7 @@
               <div class="col-md-8 col-xl-9">
                 <div class="row gap-y">
   
-                  {{-- @foreach ($posts as $post)
+                  @foreach ($posts as $post)
                     <div class="col-md-6">
                       <div class="card border hover-shadow-6 mb-6 d-block">
                         <a href="{{route('post.show',$post->id)}}"><img class="card-img-top" src="../assets/img/thumb/1.jpg" alt="Card image cap"></a>
@@ -39,7 +39,7 @@
                         </div>
                       </div>
                     </div>
-                  @endforeach --}}
+                  @endforeach
   
                 </div>
   
@@ -67,9 +67,9 @@
   
                   <h6 class="sidebar-title">Categories</h6>
                   <div class="row link-color-default fs-14 lh-24">
-                    {{-- @foreach ($categories as $category)
+                    @foreach ($categories as $category)
                     <div class="col-6"><a href="{{route('category.show', $category->id)}}">{{$category->name}}</a></div>
-                    @endforeach --}}
+                    @endforeach
                   </div>
   
                   <hr>
