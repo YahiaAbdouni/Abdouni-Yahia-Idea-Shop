@@ -29,7 +29,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card d-block border hover-shadow-6 mb-6">
                         <div class="p-6 text-center">
-                            <h5 class="mb-0"><a class="text-dark" href="#">{{$post->title}}</a></h5>
+                            <h5 class="mb-0"><a class="text-dark" href="{{route('post.show',$post->id)}}">{{$post->title}}</a></h5>
                         </div>
                         @auth
                                 <div class="d-flex justify-content-center align-items-center mb-5">
