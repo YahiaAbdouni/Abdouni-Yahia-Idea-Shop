@@ -37,8 +37,8 @@
           <div class="container">
   
             <div class="row">
-              <div class="col-lg-12 mx-auto">
-                <a class="btn btn-round btn-outline-primary btn-xl" href="{{route('post.create')}}">Create Post</a>
+              <div class="col-lg-12 mx-auto text-center">
+                <a class="btn btn-round btn-outline-primary btn-xl mb-8 mt7" href="{{route('post.create')}}">Create Post</a>
                 @foreach ($user->posts as $post)
                     <div class="col-md-12 container-sm">
                       <div class="card border hover-shadow-6 mb-6 d-block">
