@@ -26,10 +26,10 @@ class UserPostsController extends Controller
             'title' => $request->title,
             'content' => $request->content, 
             'user_id' => auth()->id(),
-            'category_id' => $request->category_id
+            'category_id' => $request->category_id 
         ]);
 
-        return redirect('user/post')->with('success', 'Post created');
+        return redirect('welcome')->with('success', 'Post created');
     }
 
     public function show($id){

@@ -49,6 +49,6 @@ class HomeController extends Controller
 
     public function user(User $user)
     {
-        return view('user.profile')->with('user', $user)->with('categories', Category::all());
+        return view('user.profile')->with('user', $user)->with('posts', Post::orderBy('id', 'DESC')->get())->with('categories', Category::all());
     }
 }
