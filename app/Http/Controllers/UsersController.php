@@ -31,4 +31,12 @@ class UsersController extends Controller
             ]);
         return back()->with('user', $user)->with('success', 'Profile updated');
     } 
+
+    public function destroy($id){
+        $user = User::find($id);
+
+        $user->delete();
+        
+        return back()->with('success', 'User deleted');
+    }
 }
