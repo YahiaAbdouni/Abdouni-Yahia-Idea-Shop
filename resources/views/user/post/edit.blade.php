@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Header -->
-    <header class="header text-center text-white" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.9), rgba(0,0,0,0.3)), url(../assets/img/thumb/19.jpg);">
+    <header class="header text-center text-white" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.9), rgba(0,0,0,0.3)), url(../../../assets/img/thumb/19.jpg);">
         <div class="container">
   
           <div class="row">

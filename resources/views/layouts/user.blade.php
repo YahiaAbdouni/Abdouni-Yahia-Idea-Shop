@@ -32,8 +32,8 @@
         <div class="navbar-left">
           <button class="navbar-toggler" type="button">&#9776;</button>
           <a class="navbar-brand" href="/">
-            <img class="logo-dark" src="../../assets/img/logo-dark.png" alt="logo">
-            <img class="logo-light" src="../../assets/img/logo-light.png" alt="logo">
+            <img class="logo-dark" src="../../../assets/img/logo-dark.png" alt="logo">
+            <img class="logo-light" src="../../../assets/img/logo-light.png" alt="logo">
           </a>
         </div>
 
@@ -92,11 +92,6 @@
                   </div>
               </li>
           @endguest
-
-          @auth
-          @else
-            <a class="btn btn-xs btn-round btn-outline-success ml-2" href="{{ route('register') }}">{{ __('Register') }}</a>
-          @endauth
       </ul>
 
       </div>
@@ -110,7 +105,7 @@
           <div class="row gap-y align-items-center">
   
             <div class="col-6 col-lg-3">
-              <a href="../index.html"><img src="../../assets/img/logo-dark.png" alt="logo"></a>
+              <a href="../index.html"><img src="../../../assets/img/logo-dark.png" alt="logo"></a>
             </div>
   
             <div class="col-6 col-lg-3 text-right order-lg-last">

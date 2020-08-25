@@ -11,6 +11,11 @@
   
               <h1>Welcome to IdeaShop</h1>
               <p class="lead-2 opacity-90 mt-6">Search for projects and post your own.</p>
+
+              @auth
+              @else
+                <a class="btn btn-xl btn-round btn-outline-primary ml-2" href="{{ route('register') }}">{{ __('Register') }}</a>
+              @endauth
   
             </div>
           </div>
