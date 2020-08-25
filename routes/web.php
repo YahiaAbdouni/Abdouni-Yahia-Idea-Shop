@@ -24,7 +24,7 @@ Route::get('/user/{user}', 'HomeController@user')->name('user-show');
 
 Route::resource('user/category', 'UserCategoriesController');
 
-Route::resource('user/post', 'UserpostsController');
+Route::resource('user/post', 'UserPostsController');
 
 Auth::routes();
 
