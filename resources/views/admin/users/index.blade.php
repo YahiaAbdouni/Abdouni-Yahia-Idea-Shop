@@ -13,7 +13,7 @@
                         <a class="btn btn-xs btn-round btn-outline-primary mx-1" href="#">Edit</a>
                     @endif
                 @endauth
-                <form action="{{route('users.destroy',$user->id)}}" method="POST">
+                <form action="{{route('posts.destroy',$user->id)}}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-xs btn-round btn-outline-danger mx-1" onclick="return confirm('Are you sure??')">Delete</button>
