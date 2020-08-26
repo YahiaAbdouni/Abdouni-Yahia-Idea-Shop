@@ -51,4 +51,17 @@ class HomeController extends Controller
     {
         return view('user.profile')->with('user', $user)->with('posts', Post::orderBy('id', 'DESC')->get())->with('categories', Category::all());
     }
+
+    public function editUser($id){
+        $user = User::find($id);
+        return view('user.edit')->with('user', $user)->with('categories', Category::all());
+    }
+
+    public function update(Request $request, User $user){
+        $user->update([
+            'name' => $request->name,
+            'email' => $request->email
+            ]);
+        return view('user.profile')->with('user', $user)->with('posts', Post::orderBy('id', 'DESC')->get())->with('categories', Category::all());
+    }
 }

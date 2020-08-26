@@ -10,7 +10,7 @@
             <div class="d-flex justify-content-center align-items-center mb-5">
                 @auth
                     @if (auth()->id() == $user->id)
-                        <a class="btn btn-xs btn-round btn-outline-primary mx-1" href="#">Edit</a>
+                        <a class="btn btn-xs btn-round btn-outline-primary mx-1" href="{{route('users.edit',$user->id)}}">Edit</a>
                     @endif
                 @endauth
                 <form action="{{route('users.destroy',$user->id)}}" method="POST">

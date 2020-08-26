@@ -26,6 +26,10 @@ Route::resource('user/category', 'UserCategoriesController');
 
 Route::resource('user/post', 'UserPostsController');
 
+Route::get('/user/{user}/edit', 'HomeController@editUser')->name('edit-user');
+
+Route::post('user/{user}/update-user', 'HomeController@update')->name('update-user');
+
 Auth::routes();
 
 

@@ -8,9 +8,16 @@
           <div class="row h-100">
             <div class="col-lg-8 mx-auto align-self-center">
   
-              <h1 class="display-4 mt-7 mb-8">{{$user->name}}</h1>
+              <h1 class="display-4 mt-7 mb-5">{{$user->name}}</h1>
               <p><a class="text-white" href="#">{{$user->email}}</a></p>
-              <p><img class="avatar avatar-xl" src="../assets/img/avatar/2.jpg" alt="..."></p>
+              {{-- <p><img class="avatar avatar-xl" src="../assets/img/avatar/2.jpg" alt="..."></p> --}}
+
+              @auth
+                @if (auth()->id() == $user->id)
+                  <a class="btn btn-round btn-outline-primary btn-l mb-8 mt7" href="{{route('edit-user', $user->id)}}">Edit profile</a>
+                @endif
+              @endauth
+
   
             </div>
   
@@ -38,7 +45,11 @@
   
             <div class="row">
               <div class="col-lg-12 mx-auto text-center">
-                <a class="btn btn-round btn-outline-primary btn-xl mb-8 mt7" href="{{route('post.create')}}">Create Post</a>
+                @auth
+                  @if (auth()->id() == $user->id)
+                  <a class="btn btn-round btn-outline-primary btn-xl mb-8 mt7" href="{{route('post.create')}}">Create Post</a>
+                  @endif
+                @endauth
                 @foreach ($user->posts as $post)
                     <div class="col-md-12 container-sm">
                       <div class="card border hover-shadow-6 mb-6 d-block">
