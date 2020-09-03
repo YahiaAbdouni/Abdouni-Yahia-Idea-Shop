@@ -62,6 +62,6 @@ class HomeController extends Controller
             'name' => $request->name,
             'email' => $request->email
             ]);
-        return view('user.profile')->with('user', $user)->with('posts', Post::orderBy('id', 'DESC')->get())->with('categories', Category::all());
+        return redirect()->route('user-show', auth()->id())->with('success', 'User updated');
     }
 }

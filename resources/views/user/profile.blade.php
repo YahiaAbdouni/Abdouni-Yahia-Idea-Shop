@@ -13,7 +13,7 @@
               {{-- <p><img class="avatar avatar-xl" src="../assets/img/avatar/2.jpg" alt="..."></p> --}}
 
               @auth
-                @if (auth()->id() == $user->id)
+                @if (auth()->user()->isAdmin())
                   <a class="btn btn-round btn-outline-primary btn-l mb-8 mt7" href="{{route('edit-user', $user->id)}}">Edit profile</a>
                 @endif
               @endauth
