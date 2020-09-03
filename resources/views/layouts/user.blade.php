@@ -18,8 +18,8 @@
     </style>
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
-    <link rel="icon" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../../assets/img/favicon.png">
   </head>
 
   <body>
@@ -130,8 +130,8 @@
   
   
       <!-- Scripts -->
-      <script src="../assets/js/page.min.js"></script>
-      <script src="../assets/js/script.js"></script>
+      <script src="../../assets/js/page.min.js"></script>
+      <script src="../../assets/js/script.js"></script>
   
     </body>
   </html>
