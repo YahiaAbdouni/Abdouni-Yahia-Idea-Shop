@@ -27,6 +27,7 @@
                     <div class="container-sm rounded-md shadow-6 p-6 border">
                         <form action="{{route('post.update', $post->id)}}" method="POST">
                             @csrf
+                            @method('PUT')
                             <input class="form-control my-3" type="text" name="title" placeholder="{{$post->title}}">
                             <textarea class="form-control my-3" name="content" rows="5" placeholder="{{$post->content}}"></textarea>
                             <select class="form-control my-3" name="category_id">
