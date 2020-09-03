@@ -110,10 +110,9 @@
   
             <div class="col-6 col-lg-3 text-right order-lg-last">
               <div class="social">
-                <a class="social-facebook" href="https://www.facebook.com/thethemeio"><i class="fa fa-facebook"></i></a>
-                <a class="social-twitter" href="https://twitter.com/thethemeio"><i class="fa fa-twitter"></i></a>
-                <a class="social-instagram" href="https://www.instagram.com/thethemeio/"><i class="fa fa-instagram"></i></a>
-                <a class="social-dribbble" href="https://dribbble.com/thethemeio"><i class="fa fa-dribbble"></i></a>
+                <a class="social-facebook" href="https://www.facebook.com/yabdouni3"><i class="fa fa-facebook"></i></a>
+                <a class="social-twitter" href="https://twitter.com/yabdouni3"><i class="fa fa-twitter"></i></a>
+                <a class="social-instagram" href="https://www.instagram.com/abdouni_yahia/"><i class="fa fa-instagram"></i></a>
               </div>
             </div>
   
